@@ -521,7 +521,7 @@ export interface ApiMeMe extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    description: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
     image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     job: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
